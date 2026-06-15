@@ -32,8 +32,8 @@ jobs:
         run: |
           mvn sonar:sonar \
             -Dsonar.projectKey=springboot-app \
-            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            -Dsonar.host.url=http://192.168.56.133:9000\
+            -Dsonar.login=squ_953d0df91477fe33771033d8bf150721cabae8c7
       
 
 
