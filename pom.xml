@@ -63,7 +63,7 @@
 	<repositories>
   <repository>
     <id>nexus</id>
-    <url>http://localhost:8081/repository/maven-public/</url>
+    <url>http://192.168.56.133:8081/repository/maven-public/</url>
     <releases>
       <enabled>true</enabled>
     </releases>
