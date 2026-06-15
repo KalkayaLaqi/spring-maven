@@ -11,15 +11,4 @@
       <password>4682e882-e39f-4fd5-a1fa-7bbdf820acde</password>  <!-- Remplacé par GitHub Actions -->
     </server>
   </servers>
-
-  <!-- Optionnel : Utiliser maven-public comme mirror pour toutes les requêtes -->
-  <mirrors>
-    <mirror>
-      <id>nexus</id>
-      <name>Nexus Mirror</name>
-      <url>http://192.168.56.133:8081/repository/maven-public/</url>
-      <mirrorOf>*</mirrorOf>  <!-- Remplace TOUS les repositories par Nexus -->
-    </mirror>
-  </mirrors>
-
 </settings>
