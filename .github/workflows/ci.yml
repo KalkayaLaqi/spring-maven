@@ -42,8 +42,8 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: mvn deploy -DskipTests
         env:
-          NEXUS_USER: ${{ secrets.NEXUS_USER }}
-          NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+          NEXUS_USER: admin
+          NEXUS_PASSWORD: 4682e882-e39f-4fd5-a1fa-7bbdf820acde
 
       # 6. Upload l'artefact JAR
       - name: Upload JAR artifact
