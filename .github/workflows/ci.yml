@@ -30,10 +30,11 @@ jobs:
       # 4. Analyse SonarQube
       - name: SonarQube Analysis
         run: |
+          echo "SonarQube URL: ${{ secrets.SONAR_HOST_URL }}"
           mvn sonar:sonar \
             -Dsonar.projectKey=springboot-app \
-            -Dsonar.host.url=${{secrets.SONAR_HOST_URL}} \
-            -Dsonar.login=${{secrets.SONAR_TOKEN}}
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       # 5. Publier vers Nexus (uniquement sur main)
       - name: Publish to Nexus
