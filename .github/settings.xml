@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <!-- Configuration des identifiants pour Nexus -->
+  <servers>
+    <server>
+      <id>nexus</id>  <!-- Doit correspondre à l'<id> dans pom.xml -->
+      <username>${env.NEXUS_USER}</username>  <!-- Remplacé par GitHub Actions -->
+      <password>${env.NEXUS_PASSWORD}</password>  <!-- Remplacé par GitHub Actions -->
+    </server>
+  </servers>
+
+  <!-- Optionnel : Utiliser maven-public comme mirror pour toutes les requêtes -->
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <name>Nexus Mirror</name>
+      <url>http://192.168.56.133:8081/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>  <!-- Remplace TOUS les repositories par Nexus -->
+    </mirror>
+  </mirrors>
+
+</settings>
