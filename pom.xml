@@ -45,6 +45,13 @@
     		<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+  		<repository>
+    		<id>nexus</id>
+   			<url>http://192.168.56.133:8081/repository/maven-public/</url>
+	  	</repository>
+	</distributionManagement>
 	
 
 	<build>
