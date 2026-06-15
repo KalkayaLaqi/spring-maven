@@ -45,14 +45,18 @@
     		<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
-
 	<distributionManagement>
-  		<repository>
-    		<id>nexus</id>
-   			<url>http://192.168.56.133:8081/repository/maven-public/</url>
-	  	</repository>
+	  <repository>
+	    <id>nexus</id>  <!-- Doit correspondre à l'<id> dans settings.xml -->
+	    <url>http://192.168.56.133:8081/repository/spring-releases/</url>
+	    <releases>
+	      <enabled>true</enabled>
+	    </releases>
+	    <snapshots>
+	      <enabled>false</enabled>  <!-- Désactive les snapshots (optionnel) -->
+	    </snapshots>
+	  </repository>
 	</distributionManagement>
-	
 
 	<build>
 		<plugins>
