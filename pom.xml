@@ -50,42 +50,12 @@
 	<distributionManagement>
 	  <repository>
 	    <id>nexus</id>  <!-- Doit correspondre à l'<id> dans settings.xml -->
-	    <url>http://192.168.56.133:8081/repository/maven-public/</url>
+	    <url>http://192.168.56.133:8081/repository/spring-releases/</url>
 	    <releases>
 	      <enabled>true</enabled>
 	    </releases>
-	    <snapshots>
-	      <enabled>false</enabled>  <!-- Désactive les snapshots (optionnel) -->
-	    </snapshots>
 	  </repository>
 	</distributionManagement>
-
-	<repositories>
-  <repository>
-    <id>nexus</id>
-    <url>http://192.168.56.133:8081/repository/maven-public/</url>
-    <releases>
-      <enabled>true</enabled>
-    </releases>
-    <snapshots>
-      <enabled>true</enabled>
-    </snapshots>
-  </repository>
-</repositories>
-
-	<pluginRepositories>
-	  <pluginRepository>
-	    <id>nexus</id>
-	    <url>http://192.168.56.133:8081/repository/maven-public/</url>
-	    <releases>
-	      <enabled>true</enabled>
-	    </releases>
-	    <snapshots>
-	      <enabled>true</enabled>
-	    </snapshots>
-	  </pluginRepository>
-	</pluginRepositories>
-
 	<build>
 		<plugins>
 			<plugin>
