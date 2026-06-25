@@ -7,8 +7,8 @@
   <servers>
     <server>
       <id>nexus</id>  <!-- Doit correspondre à l'<id> dans pom.xml -->
-      <username>admin</username>  <!-- Remplacé par GitHub Actions -->
-      <password>4682e882-e39f-4fd5-a1fa-7bbdf820acde</password>  <!-- Remplacé par GitHub Actions -->
+      <username>nexus</username>  <!-- Remplacé par GitHub Actions -->
+      <password>testtest</password>  <!-- Remplacé par GitHub Actions -->
     </server>
   </servers>
 </settings>
